@@ -54,8 +54,8 @@ select {
 }
 
 a {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-decoration: none;
   cursor: pointer;
   color: inherit;
