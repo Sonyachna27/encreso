@@ -3,6 +3,7 @@ main{
     @media screen and (max-width:501px) {
         margin-top: 73px;
     }
+    
 }
 
 .main{
@@ -12,11 +13,8 @@ main{
     &__wrapper{
         padding: 95px 80px ;
         position: relative;
-            
         @media screen and (max-width:767px) {
-        
             padding: 70px 20px;
-        
     }
         p{
             max-width: 510px;

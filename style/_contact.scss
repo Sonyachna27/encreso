@@ -43,6 +43,10 @@
                     gap: 9px;
                     font-size: 16px;
                     font-weight: 500;
+                    &:hover{
+                        color: $--blue;
+                        transition: .3s;
+                    }
                 }
             }
             
