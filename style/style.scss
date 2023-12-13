@@ -49,9 +49,7 @@
 html{
   scroll-behavior: smooth;
 }
-* {
-  border: 2 px solid red;
-  }
+
 .container{
     max-width: 1320px;
     width: 100%;
@@ -62,6 +60,7 @@ html{
 body{
   color: $--gray;
   background-color: $--background;
+
   font-family: 'Inter';
   font-size: 14px;
   font-style: normal;
