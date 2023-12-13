@@ -130,6 +130,10 @@ header {
 .header__top a {
   font-weight: 600;
 }
+.header__top a:hover {
+  color: #37A9E7;
+  transition: 0.3s;
+}
 .header__top a:nth-of-type(1) {
   margin-left: auto;
   margin-right: 20px;
@@ -223,6 +227,10 @@ header {
     max-width: 100%;
     width: 100%;
   }
+}
+.header__bottom-wrap nav ul li:hover {
+  color: #37A9E7;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1023px) {
   .header__bottom-wrap nav ul li a {
@@ -498,11 +506,11 @@ main {
 }
 .about__wrapper-content {
   position: relative;
-  padding: 0 58px;
+  padding: 60px 58px;
 }
 @media screen and (max-width: 767px) {
   .about__wrapper-content {
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 .about__wrapper-content::after {
@@ -808,6 +816,10 @@ main {
     font-size: 16px;
   }
 }
+.faq__wrapper .tab label:hover {
+  transition: 0.3s;
+  background-color: #37A9E7;
+}
 .faq__wrapper .tab label .dagger {
   position: relative;
   margin-left: auto;
@@ -845,7 +857,7 @@ main {
 }
 .faq__wrapper input:checked ~ .tab__content {
   max-height: 100vh;
-  padding: 0px 40px 40px 40px;
+  padding: 20px 40px 40px 40px;
   font-size: 14px;
   font-weight: 500;
   width: 100%;
@@ -912,6 +924,10 @@ main {
   gap: 9px;
   font-size: 16px;
   font-weight: 500;
+}
+.contacts__wrapper-content .contact a:hover {
+  color: #37A9E7;
+  transition: 0.3s;
 }
 .contacts__wrapper iframe {
   max-width: 100%;
@@ -1195,6 +1211,10 @@ main {
   text-wrap: balance;
   margin-bottom: 15px;
 }
+.footer__wrapper-menu div:not([class]) a:hover {
+  color: #37A9E7;
+  transition: 0.3s;
+}
 .footer__wrapper-menu div:not([class]) a span {
   font-size: 14px;
   font-weight: 400;
@@ -1244,6 +1264,10 @@ main {
   background-color: #262626;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1320px;
   width: 100%;
@@ -1258,7 +1282,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1;
 }
 
 h1 {
@@ -1269,6 +1293,8 @@ h1 {
   padding: 0;
   max-width: 1060px;
   margin-bottom: 20px;
+  display: block;
+  line-height: 1;
 }
 @media screen and (max-width: 760px) {
   h1 {
@@ -1307,6 +1333,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   font-family: "Bebas";
+  display: block;
 }
 @media screen and (max-width: 760px) {
   h3 {

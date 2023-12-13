@@ -63,6 +63,10 @@
                     display: flex;
                     text-wrap: balance;
                     margin-bottom: 15px;
+                    &:hover{
+                        color: $--blue;
+                        transition: .3s;
+                    }
                     span{
                         font-size: 14px;
                         font-weight: 400;

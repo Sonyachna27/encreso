@@ -46,7 +46,9 @@
 @import './footer.scss';
 
 //  style
-
+html{
+  scroll-behavior: smooth;
+}
 .container{
     max-width: 1320px;
     width: 100%;
@@ -61,7 +63,8 @@ body{
   font-size: 14px;
   font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1;
+    
 }
 h1{
   font-size: 64px;
@@ -71,6 +74,8 @@ h1{
   padding: 0;
 max-width: 1060px;
 margin-bottom: 20px;
+display: block;
+line-height: 1;
   
   @media screen and (max-width:760px) {
     font-size: 45px;
@@ -103,6 +108,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   font-family: 'Bebas';
+  display: block;
   @media screen and (max-width:760px) {
     font-size: 20px;
   }
@@ -167,7 +173,6 @@ p{
 
   }
   &:after{
-    // left: inherit;
     right: 0;
   }
 }
