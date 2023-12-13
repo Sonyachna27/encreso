@@ -37,7 +37,15 @@
     img{
         height: 100%;
         object-fit: cover;
-        
+        width: 100%;
+        @media screen and (max-width:990px) {
+            max-height: 682px;
+            
+        }
+        @media screen and (max-width:767px) {
+            max-height: 382px;
+            
+        }
     }
     h2 {
        margin-bottom: 40px;
@@ -84,6 +92,8 @@
                     align-items: center;
                     gap: 10px;
                     border: 1px solid $--gray;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
                     background: transparent;
                     color: $--gray;
                     cursor: pointer;
