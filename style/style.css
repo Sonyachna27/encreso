@@ -88,8 +88,8 @@ select {
 }
 
 a {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-decoration: none;
   cursor: pointer;
   color: inherit;
@@ -1271,10 +1271,6 @@ main {
 
 html {
   scroll-behavior: smooth;
-}
-
-* {
-  border: 2 px solid red;
 }
 
 .container {
