@@ -1,0 +1,27 @@
+main{
+    margin-top: 100px;
+}
+
+.main{
+    padding: 134px 0 135px 0;
+    background: url(../images/main-img.jpg) center center / cover no-repeat;
+   
+    &__wrapper{
+        padding: 95px 80px ;
+        position: relative;
+            
+        @media screen and (max-width:767px) {
+        
+            padding: 70px 20px;
+        
+    }
+        p{
+            max-width: 510px;
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
+        .btn{
+            max-width: 100%;
+        }
+    }
+}

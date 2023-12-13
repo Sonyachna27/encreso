@@ -1,0 +1,157 @@
+header{
+    background-color: $--black;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+.header__top{
+        padding: 7px 0 8px 0;
+        background-color:#EFEFEF ;
+        color: $--black;
+        font-size: 12px;
+     
+        .container{
+            display: flex;
+        }
+        a{
+            font-weight: 600;
+            &:nth-of-type(1){
+                margin-left: auto;
+                margin-right: 20px;
+            }
+        }
+    }
+.header__bottom-wrap{
+        padding: 16px 0 17px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menuBtns{
+            display: none;
+
+            @media  screen and (max-width:1023px) {
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: relative;
+
+                .icon {
+                    width: 20px;
+                    height: 1px;
+                    background: $--gray;
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                    transition: .3s ease;
+
+                    &::after,
+                    &::before
+                    {
+                        width: 20px;
+                        height: 1px;
+                        background: $--white;
+                        position: absolute;
+                        left: 0;
+                        content: "";
+                        transition: .3s ease;
+                      }
+                    &::after {
+                        top: 6px;
+                      }
+                      &::before {
+                        top: -6px;
+                      }
+
+                      .open &:before {
+                        display: none;
+                      }
+                                       
+                      .open &::after {
+                        transform: rotate(-90deg);
+                        width: 30px;
+                        top: 0;
+                      }
+                      .open & {
+                        transform: rotate(45deg);
+                        width: 30px;
+                        left: 6px;
+                      }
+                  }
+            }
+           
+            }
+        nav{
+            position:  relative;
+
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                color: #FFF;
+                font-size: 16px;
+                margin: 0;
+                a{
+                    color: inherit;
+                }
+
+                @media screen and (max-width:1023px) {
+                    display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+                  justify-content: center;
+                  align-items:center;
+                  z-index: 5;
+                  font-size: 36px;
+                  padding: 40px 20px;
+                  max-width: 100%;
+                width: 100%;
+                  
+                }
+                
+                li {
+                    
+                   
+                    a{
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        min-width: 100%;
+                        @media screen and (max-width:1023px) {
+                            font-size: 32px;
+                            font-weight: 600;
+                        }
+                    }
+
+            }
+        }
+            @media screen and (max-width: 1023px) {
+                position: fixed;
+                left: 0;
+                top: 101px;
+                width: 100%;
+                height: 100%;
+                background: $--black;
+                transform: translateX(-100%);
+                transition: transform 0.5s;
+                z-index: 5;
+                display: flex;
+                align-items: center;
+                gap: 60px;
+            }
+            .open & {
+                transform: translateX(0);
+              }
+        }
+        .btn{
+            max-width: 217px;
+            text-transform: uppercase;
+            @media screen and (max-width:1023px) {
+                display: none;
+            }
+        }
+    }
+

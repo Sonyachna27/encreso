@@ -1,0 +1,173 @@
+//fonts
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+    font-weight: 700;
+}
+
+//imports
+
+@import './reset.scss';
+@import './root.scss';
+@import './header.scss';
+@import './main-section.scss';
+@import './advent.scss';
+@import './about.scss';
+@import './services.scss';
+@import './work.scss';
+@import './faq.scss';
+@import './contact.scss';
+@import './book.scss';
+@import './footer.scss';
+
+//  style
+
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body{
+  color: $--gray;
+  background-color: $--background;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h1{
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Bebas";
+  text-transform: uppercase;
+  padding: 0;
+max-width: 1060px;
+margin-bottom: 20px;
+  
+  @media screen and (max-width:760px) {
+    font-size: 45px;
+  }
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span{
+  font: inherit;
+  text-transform: inherit;
+  line-height:inherit;
+}
+h1 span{
+  color: $--blue;
+}
+h2{
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Bebas';
+  font-style: normal;
+  line-height: 1;
+ 
+  @media screen and (max-width:760px) {
+    font-size: 35px;
+  }
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Bebas';
+  @media screen and (max-width:760px) {
+    font-size: 20px;
+  }
+}
+p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.btn{
+  display: flex;
+  max-width: 220px;
+  padding: 14px 39.5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  background-color: $--blue;
+  font-size: 14px;
+  font-weight: 600;
+  color: $--gray;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover{
+  background-color: transparent;
+  border-color: $--blue;
+  color: $--blue;
+  transition: .3s ease;
+}
+.black-btn{
+  max-width: 100%;
+                padding: 24.5px 39.5px;
+                background-color: $--black;
+                font-size: 16px;
+}
+.black-btn:hover{
+  background-color: transparent;
+  border-color: $--black;
+  color: $--black;
+  transition: .3s ease;
+}
+.line{
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  top:0px;
+  left: 0;
+  height: 2px;
+  background: #F7F6F7;;
+  
+  &:before,
+  &:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: $--blue;
+    top: -15px;
+  }
+  &:before{
+    left: 0;
+
+  }
+  &:after{
+    // left: inherit;
+    right: 0;
+  }
+}
