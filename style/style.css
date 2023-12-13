@@ -1025,11 +1025,11 @@ main {
 }
 .book__wrapper-content {
   position: relative;
-  padding: 0 60px;
+  padding: 60px;
 }
 @media screen and (max-width: 767px) {
   .book__wrapper-content {
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 .book__wrapper-content::after {
