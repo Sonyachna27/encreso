@@ -13,14 +13,14 @@ header{
         background-color:#EFEFEF ;
         color: $--black;
         font-size: 12px;
+        max-width: 100%;
+        width: 100%;
         @media screen and (max-width:501px) {
             display: none;
         }
         .container{
             display: flex;
-            
         }
-        
         a{
             font-weight: 600;
 
@@ -38,6 +38,8 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
         .menuBtns{
             display: none;
 
@@ -102,6 +104,9 @@ header{
                 color: #FFF;
                 font-size: 16px;
                 margin: 0;
+                // @media screen and (max-width:) {
+                    
+                // }
                 a{
                     color: inherit;
                 }
