@@ -118,17 +118,16 @@ header {
   font-size: 12px;
   max-width: 100%;
   width: 100%;
-}
-@media screen and (max-width: 501px) {
-  .header__top {
-    display: none;
-  }
+  overflow: hidden;
+  overflow-x: scroll;
 }
 .header__top .container {
   display: flex;
+  gap: 10px;
 }
 .header__top a {
   font-weight: 600;
+  white-space: nowrap;
 }
 .header__top a:hover {
   color: #37A9E7;
@@ -211,6 +210,15 @@ header {
   font-size: 16px;
   margin: 0;
 }
+.header__bottom-wrap nav ul .btn {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .header__bottom-wrap nav ul .btn {
+    display: block;
+    margin-top: 15px;
+  }
+}
 .header__bottom-wrap nav ul a {
   color: inherit;
 }
@@ -254,11 +262,6 @@ header {
     display: flex;
     align-items: center;
     gap: 60px;
-  }
-}
-@media screen and (max-width: 501px) {
-  .header__bottom-wrap nav {
-    top: 73px;
   }
 }
 .open .header__bottom-wrap nav {
@@ -600,6 +603,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 767px) {
+  .services__wrapper-content-item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .services__wrapper-content-item div {
   display: flex;
   align-items: center;
@@ -861,7 +870,7 @@ main {
 }
 .faq__wrapper input:checked ~ .tab__content {
   max-height: 100vh;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 40px;
   font-size: 14px;
   font-weight: 500;
   width: 100%;
@@ -869,7 +878,7 @@ main {
 }
 @media screen and (max-width: 767px) {
   .faq__wrapper input:checked ~ .tab__content {
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
   }
 }
 .faq__wrapper input:checked ~ label div::after {
@@ -1193,8 +1202,16 @@ main {
 }
 .footer__wrapper-menu div:not([class]):nth-of-type(2) a {
   display: block;
-  max-width: 117px;
+  min-width: 117px;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper-menu div:not([class]):nth-of-type(2) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
 }
 .footer__wrapper-menu div:not([class]) span {
   font-size: 16px;
@@ -1210,6 +1227,11 @@ main {
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper-menu div:not([class]) ul {
+    align-items: center;
+  }
 }
 .footer__wrapper-menu div:not([class]) a {
   display: flex;
