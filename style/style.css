@@ -736,6 +736,7 @@ main {
 }
 .work__wrapper-content-images a {
   max-width: 100%;
+  width: 100%;
 }
 .work__wrapper-content-images a img {
   max-width: 100%;
