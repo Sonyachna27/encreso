@@ -118,8 +118,12 @@ header {
   font-size: 12px;
   max-width: 100%;
   width: 100%;
-  overflow: hidden;
-  overflow-x: scroll;
+}
+@media screen and (max-width: 1023px) {
+  .header__top {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 }
 .header__top .container {
   display: flex;
